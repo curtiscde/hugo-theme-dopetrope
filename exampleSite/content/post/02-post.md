@@ -1,7 +1,8 @@
 +++
 description = "Second post description"
 date = "2018-01-02T00:00:00"
-image = "images/pic08.jpg"
+thumbnail = "images/pic08.jpg"
+image = "images/pic01.jpg"
 title = "Second post"
 slug = "second-post"
 author = "John Smith"

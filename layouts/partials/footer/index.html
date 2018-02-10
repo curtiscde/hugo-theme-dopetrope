@@ -41,7 +41,7 @@
                     <header>
                         <h2>{{ .Site.Params.Footer.title2 }}</h2>
                     </header>
-                    <a href="{{ .Site.Params.Footer.imagelink2 }}" class="image featured"><img src="{{ .Site.Params.Footer.imageurl2 }}" alt="" /></a>
+                    <a href="{{ .Site.Params.Footer.imagelink2 }}" class="image featured"><img src="{{ .Site.BaseURL }}{{ .Site.Params.Footer.imageurl2 }}" alt="" /></a>
                     <p>
                         {{ .Site.Params.Footer.description2 }}
                     </p>
