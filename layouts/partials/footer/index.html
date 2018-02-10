@@ -100,9 +100,9 @@
                         <li>
                             <h3>Address</h3>
                             <p>
-                                Untitled Incorporated<br />
-                                1234 Somewhere Road Suite<br />
-                                Nashville, TN 00000-0000
+                                {{ .Site.Params.Address.line1 }}<br />
+                                {{ .Site.Params.Address.line2 }}<br />
+                                {{ .Site.Params.Address.line3 }}
                             </p>
                         </li>
                         <li>

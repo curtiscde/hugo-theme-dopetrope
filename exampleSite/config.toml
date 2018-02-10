@@ -13,3 +13,10 @@ theme = "../.."
     dribbble = "d"
     linkedin = "l"
     googleplus = "gp"
+
+[params.address]
+    line1 = "Untitled Incorporated"
+    line2 = "1234 Somewhere Road Suite"
+    line3 = "Nashville, TN 00000-0000"
+
+
