@@ -1,0 +1,24 @@
+{
+  "name": "hugo-theme-dopetrope",
+  "version": "0.1.0",
+  "description": "Hugo Theme Dopetrope",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curttimson/hugo-theme-dopetrope.git"
+  },
+  "keywords": [
+    "hugo",
+    "hugo-theme",
+    "dopetrope"
+  ],
+  "author": "Curtis Timson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/curttimson/hugo-theme-dopetrope/issues"
+  },
+  "homepage": "https://github.com/curttimson/hugo-theme-dopetrope#readme"
+}
