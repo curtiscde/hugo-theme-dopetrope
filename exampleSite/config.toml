@@ -17,6 +17,12 @@ theme = "../.."
     title3 = "Tempus adipiscing"
     description3 = "Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus."
 
+    buttonlink1 = "#"
+    buttontext1 = "Get Started"
+
+    buttonlink2 = "#"
+    buttontext2 = "Learn More"
+
 [params.social]
     facebook = "https://facebook.com"
     twitter = "https://twitter.com/"
