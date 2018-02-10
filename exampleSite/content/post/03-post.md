@@ -1,10 +1,10 @@
 +++
-description = "Second post description"
-date = "2017-07-21T00:00:00"
+description = "Third post description"
+date = "2017-10-31T00:00:00"
 thumbnail = "images/pic08.jpg"
 image = "images/pic01.jpg"
-title = "Second post"
-slug = "second-post"
+title = "Third post"
+slug = "third-post"
 author = "John Smith"
 draft = false
 +++
