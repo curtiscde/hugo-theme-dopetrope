@@ -24,20 +24,20 @@ theme = "../.."
     buttontext2 = "Learn More"
 
 [params.footer]
-    title1 = "sdsdsd"
+    title1 = "Blandit nisl adipiscing"
 
-    title2 = "dsdsdddd"
-    imagelink2 = "ss"
+    title2 = "What's this all about?"
+    imagelink2 = "#"
     imageurl2 = "images/pic10.jpg"
-    description2 = "This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by <a href='http://twitter.com/ajlkn'>AJ</a> for <a href='http://html5up.net/'>HTML5 UP</a> It's released for free under the <a href='http://html5up.net/license/'>Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!"
-    buttonlink2 = "sss"
-    buttontext2 = "...."
+    description2 = "This is Dopetrope a free, fully responsive HTML5 site template by AJ for HTML5 UP It's released for free under the Creative Commons Attribution license so feel free to use it for any personal or commercial project – just don't forget to credit us!"
+    buttonlink2 = "#"
+    buttontext2 = "Find out more"
 
-    title3 = "sdfsdf"
+    title3 = "Tempus consequat"
 
-    title4 = "errwe"
+    title4 = "Ipsum et phasellus"
 
-    title5 = "sdsdsd"
+    title5 = "Vitae tempor lorem"
 
 
 [params.social]
