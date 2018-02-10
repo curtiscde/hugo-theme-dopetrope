@@ -1,28 +1,23 @@
 <!-- Nav -->
 <nav id="nav">
     <ul>
-        <li class="current"><a href="index.html">Home</a></li>
+        <li class="current"><a href="{{ .Site.BaseURL }}">Home</a></li>
         <li>
-            <a href="#">Dropdown</a>
+            <a href="{{ .Site.BaseURL }}#portfolio">My Portfolio</a>
             <ul>
-                <li><a href="#">Lorem ipsum dolor</a></li>
-                <li><a href="#">Magna phasellus</a></li>
-                <li><a href="#">Etiam dolore nisl</a></li>
-                <li>
-                    <a href="#">Phasellus consequat</a>
-                    <ul>
-                        <li><a href="#">Magna phasellus</a></li>
-                        <li><a href="#">Etiam dolore nisl</a></li>
-                        <li><a href="#">Veroeros feugiat</a></li>
-                        <li><a href="#">Nisl sed aliquam</a></li>
-                        <li><a href="#">Dolore adipiscing</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Veroeros feugiat</a></li>
+                {{ range where .Data.Pages "Type" "portfolio" }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
             </ul>
         </li>
-        <li><a href="left-sidebar.html">Left Sidebar</a></li>
-        <li><a href="right-sidebar.html">Right Sidebar</a></li>
-        <li><a href="no-sidebar.html">No Sidebar</a></li>
+        <li>
+            <a href="{{ .Site.BaseURL }}#blog">My Blog</a>
+            <ul>
+                {{ range first 5 (where .Site.Pages "Type" "post") }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        </li>
+        <li><a href="{{ .Site.BaseURL }}#contact">Contact</a></li>
     </ul>
 </nav>
