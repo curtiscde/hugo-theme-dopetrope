@@ -2,3 +2,7 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 baseURL = "http://example.org/"
 theme = "../.."
+
+[params]
+    subtitle = "Howdy. This is Dopetrope."
+    subtitleline2 = "A responsive template by HTML5 UP"
