@@ -5,34 +5,34 @@
             <section class="first">
                 <i class="icon featured fa-cog"></i>
                 <header>
-                    <h2>Ipsum consequat</h2>
+                    <h2>{{ .Site.Params.Intro.title1 }}</h2>
                 </header>
-                <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                <p>{{ .Site.Params.Intro.description1 }}</p>
             </section>
         </div>
         <div class="4u 12u(mobile)">
             <section class="middle">
                 <i class="icon featured alt fa-flash"></i>
                 <header>
-                    <h2>Magna etiam dolor</h2>
+                    <h2>{{ .Site.Params.Intro.title2 }}</h2>
                 </header>
-                <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                <p>{{ .Site.Params.Intro.description2 }}</p>
             </section>
         </div>
         <div class="4u 12u(mobile)">
             <section class="last">
                 <i class="icon featured alt2 fa-star"></i>
                 <header>
-                    <h2>Tempus adipiscing</h2>
+                    <h2>{{ .Site.Params.Intro.title3 }}</h2>
                 </header>
-                <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                <p>{{ .Site.Params.Intro.description3 }}</p>
             </section>
         </div>
     </div>
     <footer>
         <ul class="actions">
-            <li><a href="#" class="button big">Get Started</a></li>
-            <li><a href="#" class="button alt big">Learn More</a></li>
+            <li><a href="{{ .Site.Params.Intro.buttonlink1 }}" class="button big">{{ .Site.Params.Intro.buttontext1 }}</a></li>
+            <li><a href="{{ .Site.Params.Intro.buttonlink2 }}" class="button alt big">{{ .Site.Params.Intro.buttontext2 }}</a></li>
         </ul>
     </footer>
 </section>

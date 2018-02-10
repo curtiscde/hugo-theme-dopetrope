@@ -1,0 +1,17 @@
+<ul class="social">
+    {{ if .Site.Params.Social.facebook }}
+    <li><a class="icon fa-facebook" href="{{ .Site.Params.Social.facebook }}"><span class="label">Facebook</span></a></li>
+    {{ end }}
+    {{ if .Site.Params.Social.twitter }}
+    <li><a class="icon fa-twitter" href="{{ .Site.Params.Social.twitter }}"><span class="label">Twitter</span></a></li>
+    {{ end }}
+    {{ if .Site.Params.Social.dribbble }}
+    <li><a class="icon fa-dribbble" href="{{ .Site.Params.Social.dribbble }}"><span class="label">Dribbble</span></a></li>
+    {{ end }}
+    {{ if .Site.Params.Social.linkedin }}
+    <li><a class="icon fa-linkedin" href="{{ .Site.Params.Social.linkedin }}"><span class="label">LinkedIn</span></a></li>
+    {{ end }}
+    {{ if .Site.Params.Social.googleplus }}
+    <li><a class="icon fa-google-plus" href="{{ .Site.Params.Social.googleplus }}"><span class="label">Google+</span></a></li>
+    {{ end }}
+</ul>

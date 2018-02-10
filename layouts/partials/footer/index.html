@@ -5,7 +5,7 @@
             <div class="8u 12u(mobile)">
                 <section>
                     <header>
-                        <h2>Blandit nisl adipiscing</h2>
+                        <h2>{{ .Site.Params.Footer.title1 }}</h2>
                     </header>
                     <ul class="dates">
                         <li>
@@ -39,16 +39,14 @@
             <div class="4u 12u(mobile)">
                 <section>
                     <header>
-                        <h2>What's this all about?</h2>
+                        <h2>{{ .Site.Params.Footer.title2 }}</h2>
                     </header>
-                    <a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+                    <a href="{{ .Site.Params.Footer.imagelink2 }}" class="image featured"><img src="{{ .Site.Params.Footer.imageurl2 }}" alt="" /></a>
                     <p>
-                        This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
-                        <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
-                        the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
+                        {{ .Site.Params.Footer.description2 }}
                     </p>
                     <footer>
-                        <a href="#" class="button">Find out more</a>
+                        <a href="{{ .Site.Params.Footer.buttonlink2 }}" class="button">{{ .Site.Params.Footer.buttontext2 }}</a>
                     </footer>
                 </section>
             </div>
@@ -57,7 +55,7 @@
             <div class="4u 12u(mobile)">
                 <section>
                     <header>
-                        <h2>Tempus consequat</h2>
+                        <h2>{{ .Site.Params.Footer.title3 }}</h2>
                     </header>
                     <ul class="divided">
                         <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
@@ -72,7 +70,7 @@
             <div class="4u 12u(mobile)">
                 <section>
                     <header>
-                        <h2>Ipsum et phasellus</h2>
+                        <h2>{{ .Site.Params.Footer.title4 }}</h2>
                     </header>
                     <ul class="divided">
                         <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
@@ -87,31 +85,25 @@
             <div class="4u 12u(mobile)">
                 <section>
                     <header>
-                        <h2>Vitae tempor lorem</h2>
+                        <h2>{{ .Site.Params.Footer.title5 }}</h2>
                     </header>
-                    <ul class="social">
-                        <li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
-                        <li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-                        <li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-                        <li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
-                        <li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
-                    </ul>
+                    {{ partial "footer/social.html" . }}
                     <ul class="contact">
                         <li>
                             <h3>Address</h3>
                             <p>
-                                Untitled Incorporated<br />
-                                1234 Somewhere Road Suite<br />
-                                Nashville, TN 00000-0000
+                                {{ .Site.Params.Address.line1 }}<br />
+                                {{ .Site.Params.Address.line2 }}<br />
+                                {{ .Site.Params.Address.line3 }}
                             </p>
                         </li>
                         <li>
                             <h3>Mail</h3>
-                            <p><a href="#">someone@untitled.tld</a></p>
+                            <p><a href="{{ .Site.Params.Contact.email }}">{{ .Site.Params.Contact.email }}</a></p>
                         </li>
                         <li>
                             <h3>Phone</h3>
-                            <p>(800) 000-0000</p>
+                            <p>{{ .Site.Params.Contact.phone }}</p>
                         </li>
                     </ul>
                 </section>

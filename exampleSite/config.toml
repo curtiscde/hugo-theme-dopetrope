@@ -2,3 +2,57 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 baseURL = "http://example.org/"
 theme = "../.."
+
+[params]
+    subtitle = "Howdy. This is Dopetrope."
+    subtitleline2 = "A responsive template by HTML5 UP"
+
+[params.intro]
+    title1 = "Ipsum consequat"
+    description1 = "Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus."
+
+    title2 = "Magna etiam dolor"
+    description2 = "Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus."
+
+    title3 = "Tempus adipiscing"
+    description3 = "Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus."
+
+    buttonlink1 = "#"
+    buttontext1 = "Get Started"
+
+    buttonlink2 = "#"
+    buttontext2 = "Learn More"
+
+[params.footer]
+    title1 = "Blandit nisl adipiscing"
+
+    title2 = "What's this all about?"
+    imagelink2 = "#"
+    imageurl2 = "images/pic10.jpg"
+    description2 = "This is Dopetrope a free, fully responsive HTML5 site template by AJ for HTML5 UP It's released for free under the Creative Commons Attribution license so feel free to use it for any personal or commercial project – just don't forget to credit us!"
+    buttonlink2 = "#"
+    buttontext2 = "Find out more"
+
+    title3 = "Tempus consequat"
+
+    title4 = "Ipsum et phasellus"
+
+    title5 = "Vitae tempor lorem"
+
+
+[params.social]
+    facebook = "https://facebook.com"
+    twitter = "https://twitter.com/"
+    dribbble = "https://dribbble.com"
+    linkedin = "https://www.linkedin.com"
+    googleplus = "https://plus.google.com/"
+
+[params.address]
+    line1 = "Untitled Incorporated"
+    line2 = "1234 Somewhere Road Suite"
+    line3 = "Nashville, TN 00000-0000"
+
+[params.contact]
+    email = "someone@untitled.tld"
+    phone = "(800) 000-0000"
+    

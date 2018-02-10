@@ -1,6 +1,6 @@
 {
   "name": "hugo-theme-dopetrope",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Hugo Theme Dopetrope",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "dopetrope"
   ],
   "author": "Curtis Timson",
-  "license": "ISC",
+  "license": "Creative Commons Attribution",
   "bugs": {
     "url": "https://github.com/curttimson/hugo-theme-dopetrope/issues"
   },
