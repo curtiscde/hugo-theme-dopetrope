@@ -5,7 +5,7 @@
             <div class="8u 12u(mobile)">
                 <section>
                     <header>
-                        <h2>Blandit nisl adipiscing</h2>
+                        <h2>{{ .Site.Params.Footer.title1 }}</h2>
                     </header>
                     <ul class="dates">
                         <li>
@@ -39,13 +39,11 @@
             <div class="4u 12u(mobile)">
                 <section>
                     <header>
-                        <h2>What's this all about?</h2>
+                        <h2>{{ .Site.Params.Footer.title2 }}</h2>
                     </header>
-                    <a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+                    <a href="{{ .Site.Params.Footer.imagelink2 }}" class="image featured"><img src="{{ .Site.Params.Footer.imageurl2 }}" alt="" /></a>
                     <p>
-                        This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
-                        <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
-                        the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
+                        {{ .Site.Params.Footer.description2 }}
                     </p>
                     <footer>
                         <a href="#" class="button">Find out more</a>
@@ -57,7 +55,7 @@
             <div class="4u 12u(mobile)">
                 <section>
                     <header>
-                        <h2>Tempus consequat</h2>
+                        <h2>{{ .Site.Params.Footer.title3 }}</h2>
                     </header>
                     <ul class="divided">
                         <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
@@ -72,7 +70,7 @@
             <div class="4u 12u(mobile)">
                 <section>
                     <header>
-                        <h2>Ipsum et phasellus</h2>
+                        <h2>{{ .Site.Params.Footer.title4 }}</h2>
                     </header>
                     <ul class="divided">
                         <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
@@ -87,7 +85,7 @@
             <div class="4u 12u(mobile)">
                 <section>
                     <header>
-                        <h2>Vitae tempor lorem</h2>
+                        <h2>{{ .Site.Params.Footer.title5 }}</h2>
                     </header>
                     {{ partial "footer/social.html" . }}
                     <ul class="contact">
