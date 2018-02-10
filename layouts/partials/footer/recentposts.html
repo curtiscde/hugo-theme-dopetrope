@@ -1,0 +1,16 @@
+<div class="8u 12u(mobile)">
+    <section>
+        <header>
+            <h2>{{ .Site.Params.Footer.title1 }}</h2>
+        </header>
+        <ul class="dates">
+            {{ range first 5 (where .Data.Pages "Type" "post") }}
+            <li>
+                <span class="date">{{ .Date.Format "Jan" }} <strong>{{ .Date.Format "_2" }}</strong></span>
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Description }}</p>
+            </li>
+            {{ end }}
+        </ul>
+    </section>
+</div>
