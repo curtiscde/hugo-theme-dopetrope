@@ -107,11 +107,11 @@
                         </li>
                         <li>
                             <h3>Mail</h3>
-                            <p><a href="#">someone@untitled.tld</a></p>
+                            <p><a href="{{ .Site.Params.Contact.email }}">{{ .Site.Params.Contact.email }}</a></p>
                         </li>
                         <li>
                             <h3>Phone</h3>
-                            <p>(800) 000-0000</p>
+                            <p>{{ .Site.Params.Contact.phone }}</p>
                         </li>
                     </ul>
                 </section>

@@ -19,4 +19,7 @@ theme = "../.."
     line2 = "1234 Somewhere Road Suite"
     line3 = "Nashville, TN 00000-0000"
 
-
+[params.contact]
+    email = "someone@untitled.tld"
+    phone = "(800) 000-0000"
+    
