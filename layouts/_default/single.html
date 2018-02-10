@@ -29,8 +29,10 @@
                                 <article class="box post">
                                     <a href="#" class="image featured"><img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="" /></a>
                                     <header>
-                                        <h2>{{ .Title }}</h2>
-                                        <p>Posted {{ .Date.Format "2 Jan 2006" }}</p>
+										<h2>{{ .Title }}</h2>
+										{{ if not .Date.IsZero }}
+										<p>Posted {{ .Date.Format "2 Jan 2006" }}</p>
+										{{ end }}
                                     </header>
                                     {{ .Content }}
                                 </article>

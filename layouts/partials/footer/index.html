@@ -18,19 +18,16 @@
                 </section>
             </div>
         </div>
-        <div class="row">
+        <div id="contact" class="row">
             <div class="4u 12u(mobile)">
                 <section>
                     <header>
                         <h2>{{ .Site.Params.Footer.title3 }}</h2>
                     </header>
                     <ul class="divided">
-                        <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-                        <li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-                        <li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-                        <li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-                        <li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-                        <li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+                        {{ range .Site.Data.footerlinks.left.links }}
+                        <li><a href="{{ .url }}">{{ .text }}</a></li>
+                        {{ end }}
                     </ul>
                 </section>
             </div>
@@ -40,12 +37,9 @@
                         <h2>{{ .Site.Params.Footer.title4 }}</h2>
                     </header>
                     <ul class="divided">
-                        <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-                        <li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-                        <li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-                        <li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-                        <li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-                        <li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+                        {{ range .Site.Data.footerlinks.right.links }}
+                        <li><a href="{{ .url }}">{{ .text }}</a></li>
+                        {{ end }}
                     </ul>
                 </section>
             </div>
@@ -66,7 +60,7 @@
                         </li>
                         <li>
                             <h3>Mail</h3>
-                            <p><a href="{{ .Site.Params.Contact.email }}">{{ .Site.Params.Contact.email }}</a></p>
+                            <p><a href="mailto:{{ .Site.Params.Contact.email }}">{{ .Site.Params.Contact.email }}</a></p>
                         </li>
                         <li>
                             <h3>Phone</h3>
