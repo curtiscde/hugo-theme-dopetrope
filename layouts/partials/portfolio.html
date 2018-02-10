@@ -4,18 +4,20 @@
         <h2>My Portfolio</h2>
     </header>
     <div class="row">
+        {{ range where .Data.Pages "Type" "portfolio" }}
         <div class="4u 12u(mobile)">
             <section class="box">
-                <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                <a href="#" class="image featured"><img src="{{ .Params.thumbnail }}" alt="" /></a>
                 <header>
-                    <h3>Ipsum feugiat et dolor</h3>
+                    <h3>{{ .Title }}</h3>
                 </header>
-                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                <p>{{ .Description }}</p>
                 <footer>
-                    <a href="#" class="button alt">Find out more</a>
+                    <a href="{{ .Permalink }}" class="button alt">Find out more</a>
                 </footer>
             </section>
         </div>
+        {{ end }}
         <div class="4u 12u(mobile)">
             <section class="box">
                 <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
