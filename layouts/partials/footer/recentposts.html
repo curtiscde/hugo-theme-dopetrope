@@ -4,7 +4,7 @@
             <h2>{{ .Site.Params.Footer.title1 }}</h2>
         </header>
         <ul class="dates">
-            {{ range first 5 (where .Site.Pages "Type" "blog") }}
+            {{ range first 5 (where .Site.Pages "Type" .Site.Params.Blog.foldername) }}
             <li>
                 <span class="date">{{ .Date.Format "Jan" }} <strong>{{ .Date.Format "_2" }}</strong></span>
                 <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>

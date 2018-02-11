@@ -43,7 +43,7 @@ theme = "../.."
     title = "The Blog"
     viewalltext = "View All"
     postsperpage = "6"
-
+    foldername = "blog"
 
 [params.social]
     facebook = "https://facebook.com"

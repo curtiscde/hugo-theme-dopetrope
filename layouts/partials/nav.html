@@ -8,7 +8,7 @@
         <li>
             <a href="{{ .Site.BaseURL }}/blog">{{ .Site.Params.Blog.title }}</a>
             <ul>
-                {{ range first 5 (where .Site.Pages "Type" "blog") }}
+                {{ range first 5 (where .Site.Pages "Type" .Site.Params.Blog.foldername) }}
                 <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                 {{ end }}
             </ul>

@@ -38,7 +38,7 @@
 						<div class="row">
 							<div class="12u">
 
-								{{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 2 }}
+								{{ $paginator := .Paginate (where .Data.Pages "Type" .Site.Params.Blog.foldername) 2 }}
 								{{ partial "blog.html" (dict "title" .Site.Params.Blog.title "paginator" $paginator) }}
 
 							</div>
