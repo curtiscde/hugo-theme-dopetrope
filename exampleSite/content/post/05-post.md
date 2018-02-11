@@ -1,12 +1,11 @@
 +++
-description = "Fifth post description"
+description = "An example of a blog post where comments are not allowed"
 date = "2018-01-05T00:00:00"
 thumbnail = "images/pic08.jpg"
 image = "images/pic01.jpg"
-title = "Fifth post"
-slug = "fifth-post"
+title = "No Comments Allowed"
+slug = "no-comments-allowed"
 author = "John Smith"
 draft = false
-disqusid = "5"
 +++
-Testing content
+This is an example of a blog post where comments are not allowed.
