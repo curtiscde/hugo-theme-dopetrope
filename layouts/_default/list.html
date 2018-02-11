@@ -27,6 +27,17 @@
 						{{ $paginator := .Paginate (where .Data.Pages "Type" "blog") .Site.Params.Blog.postsperpage }}
 						{{ partial "blog.html" (dict "context" . "paginator" $paginator) }}
 
+						<footer>
+							<ul class="actions">
+									{{ if $paginator.HasPrev }}
+									<li><a href="{{ $paginator.Prev.URL }}" class="button big">Prev</a></li>
+									{{ end }}
+									{{ if $paginator.HasNext }}
+									<li><a href="{{ $paginator.Next.URL }}" class="button alt big">Next</a></li>
+									{{ end }}
+							</ul>
+						</footer>
+
 					</div>
 				</div>
 
