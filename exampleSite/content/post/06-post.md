@@ -7,5 +7,6 @@ title = "Sixth post"
 slug = "sixth-post"
 author = "John Smith"
 draft = false
+disqusid = "6"
 +++
 Testing content

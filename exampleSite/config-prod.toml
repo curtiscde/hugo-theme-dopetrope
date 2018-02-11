@@ -58,3 +58,4 @@ theme = "../.."
 
 [params.settings]
     googleanalytics = "UA-113904582-2"
+    disqus = "hugo-dopetrope"

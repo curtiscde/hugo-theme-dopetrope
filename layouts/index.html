@@ -49,7 +49,10 @@
 
 		</div>
 
-		{{ partial "scripts.html" . }}
+		{{ partial "scripts/index.html" . }}
+		{{ if .Site.Params.Settings.disqus }}
+		<script id="dsq-count-scr" src="//{{ .Site.Params.Settings.disqus }}.disqus.com/count.js" async></script>
+		{{ end }}
 
 	</body>
 </html>

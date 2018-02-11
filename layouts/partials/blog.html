@@ -16,8 +16,11 @@
                 <footer>
                     <ul class="actions">
                         <li><a href="{{ .Permalink }}" class="button icon fa-file-text">Continue Reading</a></li>
-                        <!-- <li><a href="#" class="button alt icon fa-comment">33 comments</a></li> -->
+                        {{ if and (.Site.Params.Settings.disqus) (.Params.disqusid) }}
+                        <li><a href="{{ .Permalink }}" class="button alt icon fa-comment disqus-comment-count" data-disqus-identifier="{{ .Params.disqusid }}">0 Comments</a></li>
+                        {{ end }}
                     </ul>
+                    <span class="" ></span>
                 </footer>
             </section>
         </div>
