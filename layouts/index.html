@@ -38,10 +38,16 @@
 						<div class="row">
 							<div class="12u">
 
-								{{ partial "blog.html" . }}
+								{{ $paginator := .Paginate (where .Data.Pages "Type" .Site.Params.Blog.foldername) 2 }}
+								{{ partial "blog.html" (dict "title" .Site.Params.Blog.title "paginator" $paginator) }}
 
 							</div>
 						</div>
+						<footer>
+							<ul class="actions" style="text-align: center">
+								<li><a href="{{ .Site.Params.Blog.foldername }}" class="button big">{{ .Site.Params.Blog.viewalltext }}</a></li>
+							</ul>
+						</footer>
 					</div>
 				</div>
 

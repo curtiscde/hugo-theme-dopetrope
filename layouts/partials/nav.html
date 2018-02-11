@@ -4,16 +4,11 @@
         <li class="current"><a href="{{ .Site.BaseURL }}">Home</a></li>
         <li>
             <a href="{{ .Site.BaseURL }}#portfolio">My Portfolio</a>
-            <ul>
-                {{ range where .Data.Pages "Type" "portfolio" }}
-                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                {{ end }}
-            </ul>
         </li>
         <li>
-            <a href="{{ .Site.BaseURL }}#blog">My Blog</a>
+            <a href="{{ .Site.BaseURL }}{{ .Site.Params.Blog.foldername }}">{{ .Site.Params.Blog.title }}</a>
             <ul>
-                {{ range first 5 (where .Site.Pages "Type" "post") }}
+                {{ range first 5 (where .Site.Pages "Type" .Site.Params.Blog.foldername) }}
                 <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                 {{ end }}
             </ul>

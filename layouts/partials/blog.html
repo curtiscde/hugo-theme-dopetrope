@@ -1,13 +1,13 @@
 <!-- Blog -->
 <section id="blog">
     <header class="major">
-        <h2>The Blog</h2>
+        <h2>{{ .title }}</h2>
     </header>
     <div class="row">
-        {{ range where .Data.Pages "Type" "post" }}
+        {{ range .paginator.Pages }}
         <div class="6u 12u(mobile)">
             <section class="box">
-                <a href="{{ .Permalink }}" class="image featured"><img src="{{ .Params.thumbnail }}" alt="" /></a>
+                <a href="{{ .Permalink }}" class="image featured"><img src="{{ .Site.BaseURL }}{{ .Params.thumbnail }}" alt="" /></a>
                 <header>
                     <h3>{{ .Title }}</h3>
                     <p>Posted {{ .Date.Format "2 Jan 2006" }}</p>
@@ -20,7 +20,6 @@
                         <li><a href="{{ .Permalink }}" class="button alt icon fa-comment disqus-comment-count" data-disqus-identifier="{{ .Params.disqusid }}">0 Comments</a></li>
                         {{ end }}
                     </ul>
-                    <span class="" ></span>
                 </footer>
             </section>
         </div>
