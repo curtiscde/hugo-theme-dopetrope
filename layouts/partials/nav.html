@@ -6,7 +6,7 @@
             <a href="{{ .Site.BaseURL }}#portfolio">My Portfolio</a>
         </li>
         <li>
-            <a href="{{ .Site.BaseURL }}#blog">My Blog</a>
+            <a href="{{ .Site.BaseURL }}/blog">{{ .Site.Params.Blog.title }}</a>
             <ul>
                 {{ range first 5 (where .Site.Pages "Type" "blog") }}
                 <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>

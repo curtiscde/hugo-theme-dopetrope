@@ -39,6 +39,10 @@ theme = "../.."
 
     title5 = "Vitae tempor lorem"
 
+[params.blog]
+    title = "The Blog"
+    postsperpage = "6"
+
 
 [params.social]
     facebook = "https://facebook.com"
