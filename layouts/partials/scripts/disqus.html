@@ -1,5 +1,4 @@
-{{ if .Site.Params.Settings.disqus }}
-{{ if .Params.disqusid }}
+{{ if and (.Site.Params.Settings.disqus) (.Params.disqusid) }}
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -12,10 +11,9 @@
     
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
-    s.src = 'https://hugo-dopetrope.disqus.com/embed.js';
+    s.src = 'https://{{ .Site.Params.Settings.disqus }}.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
     </script>
-{{ end }}
 {{ end }}
