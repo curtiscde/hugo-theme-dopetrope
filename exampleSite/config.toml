@@ -1,5 +1,5 @@
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Dopetrope"
 baseURL = "http://localhost:1313/"
 theme = "../.."
 

@@ -7,7 +7,7 @@ Theme includes ability for:
  - Portfolio items
  - Blog posts
 
-![](docs/screenshot.png)
+![](images/device-screenshots.png)
 
 ## Setup
 
