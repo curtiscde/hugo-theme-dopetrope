@@ -7,7 +7,7 @@
         {{ range where .Data.Pages "Type" "post" }}
         <div class="6u 12u(mobile)">
             <section class="box">
-                <a href="{{ .Permalink }}" class="image featured"><img src="{{ .Params.thumbnail }}" alt="" /></a>
+                <a href="{{ .Permalink }}" class="image featured"><img src="{{ .Site.BaseURL }}{{ .Params.thumbnail }}" alt="" /></a>
                 <header>
                     <h3>{{ .Title }}</h3>
                     <p>Posted {{ .Date.Format "2 Jan 2006" }}</p>

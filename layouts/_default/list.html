@@ -1,0 +1,40 @@
+
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	{{ partial "htmlhead.html" . }}
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header">
+
+						{{ partial "logo.html" . }}
+						{{ partial "nav.html" . }}
+
+					</div>
+				</div>
+
+                			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+
+                        {{ partial "blog.html" . }}
+
+					</div>
+				</div>
+
+                {{ partial "footer/index.html" . }}
+    
+        </div>
+        
+
+		{{ partial "scripts/index.html" . }}
+
+	</body>
+</html>
