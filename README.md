@@ -85,6 +85,15 @@ The cover image URL is hard-coded, therefore to replace this add an image to the
 /static/images/pic01.jpg
 ```
 
+## Development
+
+### Example Site Deployment
+
+```
+$ hugo --config config-prod.toml
+$ gulp deploy
+```
+
 ## Original Theme Credits
 
  - [Dopetrope by HTML5 UP](https://html5up.net/dopetrope)
