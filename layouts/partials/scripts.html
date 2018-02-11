@@ -6,4 +6,18 @@
 <script src="{{ .Site.BaseURL }}assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="{{ .Site.BaseURL }}assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="{{ .Site.BaseURL }}assets/js/main.js"></script>
+
+{{ if .Site.Params.Settings.googleanalytics }}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113904582-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', {{ .Site.Params.Settings.googleanalytics }});
+</script>
+
+{{ end }}
+
 {{ partial "scriptscustom.html" . }}
