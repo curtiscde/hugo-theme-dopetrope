@@ -23,26 +23,26 @@
 
                 			<!-- Main -->
 				<div id="main-wrapper">
-                        <div class="container">
-    
-                            <!-- Content -->
-                                <article class="box post">
-                                    <a href="#" class="image featured"><img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="" /></a>
-                                    <header>
-										<h2>{{ .Title }}</h2>
-										{{ if not .Date.IsZero }}
-										<p>Posted {{ .Date.Format "2 Jan 2006" }}</p>
-										{{ end }}
-                                    </header>
-                                    {{ .Content }}
-                                </article>
+					<div class="container">
 
-                                
-    
-                        </div>
-                    </div>
+						<!-- Content -->
+						<article class="box post">
+							<a href="#" class="image featured"><img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="" /></a>
+							<header>
+								<h2>{{ .Title }}</h2>
+								{{ if not .Date.IsZero }}
+								<p>Posted {{ .Date.Format "2 Jan 2006" }}</p>
+								{{ end }}
+							</header>
+							{{ .Content }}
+						</article>
 
-                    {{ partial "footer/index.html" . }}
+						<div id="disqus_thread"></div>
+
+					</div>
+				</div>
+
+                {{ partial "footer/index.html" . }}
     
         </div>
         
