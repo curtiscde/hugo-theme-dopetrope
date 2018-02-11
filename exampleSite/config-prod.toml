@@ -41,6 +41,7 @@ theme = "../.."
 
 [params.blog]
     title = "The Blog"
+    viewalltext = "View All"
     postsperpage = "6"
 
 

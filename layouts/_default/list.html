@@ -28,7 +28,7 @@
 						{{ partial "blog.html" (dict "title" .Site.Params.Blog.title "paginator" $paginator) }}
 
 						<footer>
-							<ul class="actions">
+							<ul class="actions" style="text-align: center">
 								{{ if $paginator.HasPrev }}
 								<li><a href="{{ $paginator.Prev.URL }}" class="button big">Prev</a></li>
 								{{ end }}

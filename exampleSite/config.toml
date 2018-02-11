@@ -41,7 +41,8 @@ theme = "../.."
 
 [params.blog]
     title = "The Blog"
-    postsperpage = "6"
+    viewalltext = "View All"
+    postsperpage = "2"
 
 [params.social]
     facebook = "https://facebook.com"
