@@ -21,6 +21,23 @@ See the demo's configuration as an example:
 
 https://github.com/curttimson/hugo-theme-dopetrope/blob/master/exampleSite/config-prod.toml
 
+### Blog Comments
+
+Blog comments are supported by Disqus. Once set up comments will be displayed on the blog posts as well as a count on the homepage.
+
+If not set up already, create a Disqus account and enter the account name in the `config.toml` file:
+
+```
+[params.settings]
+    disqus = "hugo-dopetrope"
+```
+
+To display comments on a post a unique ID will need to be added to the specific blog posts. Enter these IDs in the front-matter of the post files themselves:
+
+```
+disqusid = "1"
+```
+
 ### Cover Image
 
 The cover image URL is hard-coded, therefore to replace this add an image to the following location in your Hugo application:
