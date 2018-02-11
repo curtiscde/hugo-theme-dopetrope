@@ -4,7 +4,7 @@
         <h2>The Blog</h2>
     </header>
     <div class="row">
-        {{ range where .Data.Pages "Type" "post" }}
+        {{ range where .Data.Pages "Type" "blog" }}
         <div class="6u 12u(mobile)">
             <section class="box">
                 <a href="{{ .Permalink }}" class="image featured"><img src="{{ .Site.BaseURL }}{{ .Params.thumbnail }}" alt="" /></a>

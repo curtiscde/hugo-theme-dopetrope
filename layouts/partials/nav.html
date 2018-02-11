@@ -13,7 +13,7 @@
         <li>
             <a href="{{ .Site.BaseURL }}#blog">My Blog</a>
             <ul>
-                {{ range first 5 (where .Site.Pages "Type" "post") }}
+                {{ range first 5 (where .Site.Pages "Type" "blog") }}
                 <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                 {{ end }}
             </ul>
