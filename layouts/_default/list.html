@@ -24,7 +24,8 @@
 				<div id="main-wrapper">
 					<div class="container">
 
-                        {{ partial "blog.html" . }}
+						{{ $paginator := .Paginate (where .Data.Pages "Type" "blog") .Site.Params.Blog.postsperpage }}
+						{{ partial "blog.html" (dict "context" . "paginator" $paginator) }}
 
 					</div>
 				</div>
