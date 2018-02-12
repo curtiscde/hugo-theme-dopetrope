@@ -5,5 +5,6 @@
     <!--[if lte IE 8]><script src="{{ .Site.BaseURL }}assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/main.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/ie8.css" /><![endif]-->
+    {{ .Hugo.Generator }}
     {{ partial "htmlheadcustom.html" . }}
 </head>
