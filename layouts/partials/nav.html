@@ -5,14 +5,17 @@
         <li>
             <a href="{{ .Site.BaseURL }}#portfolio">My Portfolio</a>
         </li>
+        {{ $blogPosts := first 5 (where .Site.Pages "Type" .Site.Params.Blog.foldername) }}
+        {{ if $blogPosts }}
         <li>
             <a href="{{ .Site.BaseURL }}{{ .Site.Params.Blog.foldername }}">{{ .Site.Params.Blog.title }}</a>
             <ul>
-                {{ range first 5 (where .Site.Pages "Type" .Site.Params.Blog.foldername) }}
+                {{ range $blogPosts }}
                 <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                 {{ end }}
             </ul>
         </li>
+        {{ end }}
         <li><a href="{{ .Site.BaseURL }}#contact">Contact</a></li>
     </ul>
 </nav>
