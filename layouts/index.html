@@ -35,12 +35,11 @@
 
 							</div>
 						</div>
+						{{ $blogPaginator := .Paginate (where .Data.Pages "Type" .Site.Params.Blog.foldername) 2 }}
+						{{ if $blogPaginator.TotalNumberOfElements }}
 						<div class="row">
 							<div class="12u">
-
-								{{ $paginator := .Paginate (where .Data.Pages "Type" .Site.Params.Blog.foldername) 2 }}
-								{{ partial "blog.html" (dict "title" .Site.Params.Blog.title "paginator" $paginator) }}
-
+								{{ partial "blog.html" (dict "title" .Site.Params.Blog.title "paginator" $blogPaginator) }}
 							</div>
 						</div>
 						<footer>
@@ -48,6 +47,7 @@
 								<li><a href="{{ .Site.Params.Blog.foldername }}" class="button big">{{ .Site.Params.Blog.viewalltext }}</a></li>
 							</ul>
 						</footer>
+						{{ end }}
 					</div>
 				</div>
 

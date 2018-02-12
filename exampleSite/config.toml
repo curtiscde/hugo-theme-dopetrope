@@ -42,7 +42,7 @@ theme = "../.."
 [params.blog]
     title = "The Blog"
     viewalltext = "View All"
-    postsperpage = "2"
+    postsperpage = "6"
     foldername = "blog"
 
 [params.social]
