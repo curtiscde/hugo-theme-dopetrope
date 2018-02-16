@@ -28,7 +28,7 @@
 			<!-- Main -->
 				<div id="main-wrapper">
 					<div class="container">
-						{{ $portfolioItems := where .Site.Pages "Type" "portfolio" }}
+						{{ $portfolioItems := where .Site.Pages "Type" .Site.Params.Portfolio.foldername }}
 						{{ if $portfolioItems }}
 						<div class="row">
 							<div class="12u">

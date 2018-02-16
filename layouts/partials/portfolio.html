@@ -4,7 +4,7 @@
         <h2>My Portfolio</h2>
     </header>
     <div class="row">
-        {{ range where .Data.Pages "Type" "portfolio" }}
+        {{ range where .Data.Pages "Type" .Site.Params.Portfolio.foldername }}
         <div class="4u 12u(mobile)">
             <section class="box">
                 <a href="{{ .Permalink }}" class="image featured"><img src="{{ .Params.thumbnail }}" alt="" /></a>

@@ -39,6 +39,9 @@ theme = "../.."
 
     title5 = "Vitae tempor lorem"
 
+[params.portfolio]
+    foldername = "portfolio"
+
 [params.blog]
     title = "The Blog"
     viewalltext = "View All"
