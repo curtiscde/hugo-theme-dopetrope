@@ -1,10 +1,10 @@
 <!-- Portfolio -->
 <section id="portfolio">
     <header class="major">
-        <h2>My Portfolio</h2>
+        <h2>{{ .Site.Params.Portfolio.title }}</h2>
     </header>
     <div class="row">
-        {{ range where .Data.Pages "Type" "portfolio" }}
+        {{ range where .Data.Pages "Type" .Site.Params.Portfolio.foldername }}
         <div class="4u 12u(mobile)">
             <section class="box">
                 <a href="{{ .Permalink }}" class="image featured"><img src="{{ .Params.thumbnail }}" alt="" /></a>
@@ -13,7 +13,7 @@
                 </header>
                 <p>{{ .Description }}</p>
                 <footer>
-                    <a href="{{ .Permalink }}" class="button alt">Find out more</a>
+                    <a href="{{ .Permalink }}" class="button alt">{{ .Site.Params.Portfolio.findoutmoretext }}</a>
                 </footer>
             </section>
         </div>
