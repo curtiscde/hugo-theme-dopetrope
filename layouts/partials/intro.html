@@ -3,7 +3,7 @@
     <div class="row">
         <div class="4u 12u(mobile)">
             <section class="first">
-                <i class="icon featured fa-cog"></i>
+                <i class='icon featured {{ .Site.Params.Intro.icon1 }}'></i>
                 <header>
                     <h2>{{ .Site.Params.Intro.title1 }}</h2>
                 </header>
@@ -12,7 +12,7 @@
         </div>
         <div class="4u 12u(mobile)">
             <section class="middle">
-                <i class="icon featured alt fa-flash"></i>
+                <i class="icon featured alt {{ .Site.Params.Intro.icon2 }}"></i>
                 <header>
                     <h2>{{ .Site.Params.Intro.title2 }}</h2>
                 </header>
@@ -21,7 +21,7 @@
         </div>
         <div class="4u 12u(mobile)">
             <section class="last">
-                <i class="icon featured alt2 fa-star"></i>
+                <i class="icon featured alt2 {{ .Site.Params.Intro.icon3 }}"></i>
                 <header>
                     <h2>{{ .Site.Params.Intro.title3 }}</h2>
                 </header>

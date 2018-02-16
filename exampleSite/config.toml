@@ -8,12 +8,15 @@ theme = "../.."
     subtitleline2 = "A responsive template by HTML5 UP"
 
 [params.intro]
+    icon1 = "fa-cog"
     title1 = "Ipsum consequat"
     description1 = "Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus."
 
+    icon2 = "fa-flash"
     title2 = "Magna etiam dolor"
     description2 = "Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus."
 
+    icon3 = "fa-star"
     title3 = "Tempus adipiscing"
     description3 = "Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus."
 
@@ -41,6 +44,7 @@ theme = "../.."
 
 [params.portfolio]
     foldername = "portfolio"
+    findoutmoretext = "Find out more"
 
 [params.blog]
     title = "The Blog"
