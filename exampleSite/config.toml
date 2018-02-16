@@ -43,6 +43,7 @@ theme = "../.."
     title5 = "Vitae tempor lorem"
 
 [params.portfolio]
+    title = "My Portfolio"
     foldername = "portfolio"
     findoutmoretext = "Find out more"
 

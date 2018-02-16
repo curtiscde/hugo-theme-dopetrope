@@ -1,7 +1,7 @@
 <!-- Portfolio -->
 <section id="portfolio">
     <header class="major">
-        <h2>My Portfolio</h2>
+        <h2>{{ .Site.Params.Portfolio.title }}</h2>
     </header>
     <div class="row">
         {{ range where .Data.Pages "Type" .Site.Params.Portfolio.foldername }}
