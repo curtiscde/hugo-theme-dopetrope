@@ -1,0 +1,28 @@
+{{ $sidebar := .Site.Params.Sidebar }}
+<!-- Sidebar -->
+<section class="box">
+    {{ if $sidebar.image1 }}
+    <a href="{{ $sidebar.imagelink1 }}" class="image featured"><img src="{{ .Site.BaseURL }}{{ $sidebar.image1 }}" alt="" /></a>
+    {{ end }}
+    <header>
+        <h3>{{ $sidebar.title1 }}</h3>
+    </header>
+    <p>{{ $sidebar.description1 }}</p>
+    <footer>
+        <a href="{{ $sidebar.buttonlink1 }}" class="button alt">{{ $sidebar.buttontext1 }}</a>
+    </footer>
+</section>
+<section class="box">
+    <header>
+        <h3>{{ $sidebar.title2 }}</h3>
+    </header>
+    <p>{{ $sidebar.description2 }}</p>
+    <ul class="divided">
+        {{ range first 4 (where .Site.Pages "Type" .Site.Params.Blog.foldername) }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+    <footer>
+        <a href="{{ $sidebar.buttonlink2 }}" class="button alt">{{ $sidebar.buttontext2 }}</a>
+    </footer>
+</section>
