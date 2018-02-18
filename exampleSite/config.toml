@@ -75,4 +75,4 @@ theme = "../.."
 
 [params.sidebar]
     enabled = true
-    image = "images/pic09.jpg"
+    

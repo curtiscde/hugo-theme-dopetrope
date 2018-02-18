@@ -1,6 +1,8 @@
 <!-- Sidebar -->
 <section class="box">
+    {{ if .Site.Params.Sidebar.image }}
     <a href="#" class="image featured"><img src="{{ .Site.BaseURL }}{{ .Site.Params.Sidebar.image }}" alt="" /></a>
+    {{ end }}
     <header>
         <h3>Sed etiam lorem nulla</h3>
     </header>
