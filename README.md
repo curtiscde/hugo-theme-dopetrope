@@ -21,6 +21,19 @@ See the demo's configuration as an example:
 
 https://github.com/curttimson/hugo-theme-dopetrope/blob/master/exampleSite/config-prod.toml
 
+### Front Matter
+
+ - `description`
+ - `date`
+ - `thumbnail`
+ - `image`
+ - `title`
+ - `slug`
+ - `author`
+ - `draft`
+ - `disqusid` - See [Blog Comments](#blog-comments)
+ - `hidesidebar` - Set to false to hide the sidebar on specific pages
+
 ### Blog Comments
 
 Blog comments are supported by Disqus. Once set up comments will be displayed on the blog posts as well as a count on the homepage.

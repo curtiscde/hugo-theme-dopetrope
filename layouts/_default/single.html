@@ -23,7 +23,7 @@
 			<!-- Main -->
 			<div id="main-wrapper">
 				<div class="container">
-					{{ if or (eq .Site.Params.Sidebar.position "left") (eq .Site.Params.Sidebar.position "right") }}
+					{{ if and (or (eq .Site.Params.Sidebar.position "left") (eq .Site.Params.Sidebar.position "right")) (not (eq .Params.hidesidebar true)) }}
 					<div class="row">
 						{{ if eq .Site.Params.Sidebar.position "left" }}
 						<div class="4u 12u(mobile)">
