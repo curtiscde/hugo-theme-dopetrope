@@ -1,0 +1,15 @@
+<!-- Content -->
+<article class="box post">
+    <a href="#" class="image featured"><img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="" /></a>
+    <header>
+        <h2>{{ .Title }}</h2>
+        {{ if not .Date.IsZero }}
+        <p>Posted {{ .Date.Format "2 Jan 2006" }}</p>
+        {{ end }}
+    </header>
+    {{ .Content }}
+</article>
+
+{{ if .Params.disqusid }}
+<div id="disqus_thread"></div>
+{{ end }}
