@@ -18,10 +18,9 @@
     </header>
     <p>{{ $sidebar.description2 }}</p>
     <ul class="divided">
-        <li><a href="#">Sed et blandit consequat sed</a></li>
-        <li><a href="#">Hendrerit tortor vitae sapien dolore</a></li>
-        <li><a href="#">Sapien id suscipit magna sed felis</a></li>
-        <li><a href="#">Aptent taciti sociosqu ad litora</a></li>
+        {{ range first 4 (where .Site.Pages "Type" .Site.Params.Blog.foldername) }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
     </ul>
     <footer>
         <a href="{{ $sidebar.buttonlink2 }}" class="button alt">{{ $sidebar.buttontext2 }}</a>
