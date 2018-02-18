@@ -72,3 +72,7 @@ theme = "../.."
 [params.settings]
     googleanalytics = "UA-113904582-2"
     disqus = "hugo-dopetrope"
+
+[params.sidebar]
+    position = "right"
+    image = "images/pic09.jpg"
