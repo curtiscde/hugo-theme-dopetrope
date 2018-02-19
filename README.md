@@ -76,4 +76,4 @@ $ gulp deploy
 
 This hugo theme is licensed under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/). 
 
-Read More - [LICENSE.md](LICENSE.md)
+Read More - [LICENSE](LICENSE)
