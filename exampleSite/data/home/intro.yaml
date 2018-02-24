@@ -1,12 +1,12 @@
 sections:
-- icon: 'sdsd'
-  title: 'text'
-  description: '1 des'
+- icon: 'fa-cog'
+  title: 'Ipsum consequat'
+  description: 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.'
 
-- icon: 'sdsd'
-  title: 'texsdsdt'
-  description: '1 des'
+- icon: 'fa-flash'
+  title: 'Magna etiam dolor'
+  description: 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.'
 
-- icon: 'sdsd'
-  title: 'text'
-  description: '1 des'
+- icon: 'fa-star'
+  title: 'Tempus adipiscing'
+  description: 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.'
