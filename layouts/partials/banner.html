@@ -1,7 +1,9 @@
 <!-- Banner -->
 <section id="banner">
     <header>
-        <h2>{{ .Site.Params.Subtitle }}</h2>
-        <p>{{ .Site.Params.Subtitleline2 }}</p>
+        {{ with .Site.Data.home.banner }}
+        <h2>{{ .line1 }}</h2>
+        <p>{{ .line2 }}</p>
+        {{ end }}
     </header>
 </section>

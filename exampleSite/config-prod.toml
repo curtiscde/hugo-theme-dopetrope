@@ -3,10 +3,6 @@ title = "Dopetrope"
 baseURL = "https://curttimson.github.io/hugo-theme-dopetrope/"
 theme = "../.."
 
-[params]
-    subtitle = "Howdy. This is Dopetrope."
-    subtitleline2 = "A responsive template by HTML5 UP"
-
 [params.portfolio]
     title = "My Portfolio"
     foldername = "portfolio"
