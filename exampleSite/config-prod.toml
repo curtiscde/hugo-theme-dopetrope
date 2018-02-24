@@ -18,13 +18,6 @@ theme = "../.."
     postsperpage = "6"
     foldername = "blog"
 
-[params.social]
-    facebook = "https://facebook.com"
-    twitter = "https://twitter.com/"
-    dribbble = "https://dribbble.com"
-    linkedin = "https://www.linkedin.com"
-    googleplus = "https://plus.google.com/"
-
 [params.address]
     line1 = "Untitled Incorporated"
     line2 = "1234 Somewhere Road Suite"

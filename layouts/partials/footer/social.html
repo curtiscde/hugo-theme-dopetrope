@@ -1,17 +1,19 @@
 <ul class="social">
-    {{ if .Site.Params.Social.facebook }}
-    <li><a class="icon fa-facebook" href="{{ .Site.Params.Social.facebook }}"><span class="label">Facebook</span></a></li>
+    {{ with .Site.Data.footer.links.social }}
+    {{ if .facebook }}
+    <li><a class="icon fa-facebook" href="{{ .facebook }}"><span class="label">Facebook</span></a></li>
     {{ end }}
-    {{ if .Site.Params.Social.twitter }}
-    <li><a class="icon fa-twitter" href="{{ .Site.Params.Social.twitter }}"><span class="label">Twitter</span></a></li>
+    {{ if .twitter }}
+    <li><a class="icon fa-twitter" href="{{ .twitter }}"><span class="label">Twitter</span></a></li>
     {{ end }}
-    {{ if .Site.Params.Social.dribbble }}
-    <li><a class="icon fa-dribbble" href="{{ .Site.Params.Social.dribbble }}"><span class="label">Dribbble</span></a></li>
+    {{ if .dribbble }}
+    <li><a class="icon fa-dribbble" href="{{ .dribbble }}"><span class="label">Dribbble</span></a></li>
     {{ end }}
-    {{ if .Site.Params.Social.linkedin }}
-    <li><a class="icon fa-linkedin" href="{{ .Site.Params.Social.linkedin }}"><span class="label">LinkedIn</span></a></li>
+    {{ if .linkedin }}
+    <li><a class="icon fa-linkedin" href="{{ .linkedin }}"><span class="label">LinkedIn</span></a></li>
     {{ end }}
-    {{ if .Site.Params.Social.googleplus }}
-    <li><a class="icon fa-google-plus" href="{{ .Site.Params.Social.googleplus }}"><span class="label">Google+</span></a></li>
+    {{ if .googleplus }}
+    <li><a class="icon fa-google-plus" href="{{ .googleplus }}"><span class="label">Google+</span></a></li>
+    {{ end }}
     {{ end }}
 </ul>
