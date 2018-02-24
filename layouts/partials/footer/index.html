@@ -25,7 +25,7 @@
                         <h2>{{ .Site.Params.Footer.title3 }}</h2>
                     </header>
                     <ul class="divided">
-                        {{ range .Site.Data.footerlinks.left.links }}
+                        {{ range .Site.Data.footer.links.left.links }}
                         <li><a href="{{ .url }}">{{ .text }}</a></li>
                         {{ end }}
                     </ul>
@@ -37,7 +37,7 @@
                         <h2>{{ .Site.Params.Footer.title4 }}</h2>
                     </header>
                     <ul class="divided">
-                        {{ range .Site.Data.footerlinks.right.links }}
+                        {{ range .Site.Data.footer.links.right.links }}
                         <li><a href="{{ .url }}">{{ .text }}</a></li>
                         {{ end }}
                     </ul>
