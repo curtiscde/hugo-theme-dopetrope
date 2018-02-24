@@ -18,24 +18,6 @@ theme = "../.."
     postsperpage = "6"
     foldername = "blog"
 
-[params.contact]
-    email = "someone@untitled.tld"
-    phone = "(800) 000-0000"
-
 [params.settings]
     googleanalytics = "UA-113904582-2"
     disqus = "hugo-dopetrope"
-
-[params.sidebar]
-    position = "right"
-
-    image1 = "images/pic09.jpg"
-    title1 = "Sed etiam lorem nulla"
-    description1 = "Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore."
-    buttonlink1 = "#"
-    buttontext1 = "Magna sed taciti"
-
-    title2 = "Feugiat consequat"
-    description2 = "Veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat sed lorem consequat feugiat lorem dolore."
-    buttonlink2 = "#"
-    buttontext2 = "Ipsum consequat"

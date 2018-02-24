@@ -11,12 +11,16 @@
         </p>
     </li>
     {{ end }}
+    {{ if .Site.Data.footer.contactinfo.email }}
     <li>
         <h3>Mail</h3>
-        <p><a href="mailto:{{ .Site.Params.Contact.email }}">{{ .Site.Params.Contact.email }}</a></p>
+        <p><a href="mailto:{{ .Site.Data.footer.contactinfo.email }}">{{ .Site.Data.footer.contactinfo.email }}</a></p>
     </li>
+    {{ end }}
+    {{ if .Site.Data.footer.contactinfo.email }}
     <li>
         <h3>Phone</h3>
-        <p>{{ .Site.Params.Contact.phone }}</p>
+        <p>{{ .Site.Data.footer.contactinfo.phone }}</p>
     </li>
+    {{ end }}
 </ul>
