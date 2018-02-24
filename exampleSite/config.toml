@@ -7,13 +7,6 @@ theme = "../.."
     subtitle = "Howdy. This is Dopetrope."
     subtitleline2 = "A responsive template by HTML5 UP"
 
-[params.intro]
-    buttonlink1 = "#"
-    buttontext1 = "Get Started"
-
-    buttonlink2 = "#"
-    buttontext2 = "Learn More"
-
 [params.footer]
     title1 = "Blandit nisl adipiscing"
 

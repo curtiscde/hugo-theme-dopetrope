@@ -2,6 +2,8 @@
 {{ $section1 := index .Site.Data.home.intro.sections 0 }}
 {{ $section2 := index .Site.Data.home.intro.sections 1 }}
 {{ $section3 := index .Site.Data.home.intro.sections 2 }}
+{{ $button1 := index .Site.Data.home.intro.buttons 0 }}
+{{ $button2 := index .Site.Data.home.intro.buttons 1 }}
 <section id="intro" class="container">
     <div class="row">
         <div class="4u 12u(mobile)">
@@ -34,8 +36,8 @@
     </div>
     <footer>
         <ul class="actions">
-            <li><a href="{{ .Site.Params.Intro.buttonlink1 }}" class="button big">{{ .Site.Params.Intro.buttontext1 }}</a></li>
-            <li><a href="{{ .Site.Params.Intro.buttonlink2 }}" class="button alt big">{{ .Site.Params.Intro.buttontext2 }}</a></li>
+            <li><a href="{{ $button1.link }}" class="button big">{{ $button1.text }}</a></li>
+            <li><a href="{{ $button2.link }}" class="button alt big">{{ $button2.text }}</a></li>
         </ul>
     </footer>
 </section>
