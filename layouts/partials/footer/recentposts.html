@@ -1,8 +1,10 @@
 <div class="8u 12u(mobile)">
     <section>
+        {{ with index .Site.Data.footer.content.sections 0 }}
         <header>
-            <h2>{{ .Site.Params.Footer.title1 }}</h2>
+            <h2>{{ .title }}</h2>
         </header>
+        {{ end }}
         <ul class="dates">
             {{ range first 5 (where .Site.Pages "Type" .Site.Params.Blog.foldername) }}
             <li>

@@ -1,0 +1,14 @@
+position: "right"
+
+sections:
+- image: "images/pic09.jpg"
+  imagelink: "#"
+  title: "Sed etiam lorem nulla"
+  description: "Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore."
+  buttonlink: "#"
+  buttontext: "Magna sed taciti"
+
+- title: "Feugiat consequat"
+  description: "Veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat sed lorem consequat feugiat lorem dolore."
+  buttonlink: "#"
+  buttontext: "Ipsum consequat"

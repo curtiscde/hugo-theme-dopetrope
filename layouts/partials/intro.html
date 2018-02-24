@@ -3,36 +3,46 @@
     <div class="row">
         <div class="4u 12u(mobile)">
             <section class="first">
-                <i class='icon featured {{ .Site.Params.Intro.icon1 }}'></i>
+                {{ with index .Site.Data.home.intro.sections 0 }}
+                <i class='icon featured {{ .icon }}'></i>
                 <header>
-                    <h2>{{ .Site.Params.Intro.title1 }}</h2>
+                    <h2>{{ .title }}</h2>
                 </header>
-                <p>{{ .Site.Params.Intro.description1 }}</p>
+                <p>{{ .description }}</p>
+                {{ end }}
             </section>
         </div>
         <div class="4u 12u(mobile)">
             <section class="middle">
-                <i class="icon featured alt {{ .Site.Params.Intro.icon2 }}"></i>
+                {{ with index .Site.Data.home.intro.sections 1 }}
+                <i class="icon featured alt {{ .icon }}"></i>
                 <header>
-                    <h2>{{ .Site.Params.Intro.title2 }}</h2>
+                    <h2>{{ .title }}</h2>
                 </header>
-                <p>{{ .Site.Params.Intro.description2 }}</p>
+                <p>{{ .description }}</p>
+                {{ end }}
             </section>
         </div>
         <div class="4u 12u(mobile)">
             <section class="last">
-                <i class="icon featured alt2 {{ .Site.Params.Intro.icon3 }}"></i>
+                {{ with index .Site.Data.home.intro.sections 2 }}
+                <i class="icon featured alt2 {{ .icon }}"></i>
                 <header>
-                    <h2>{{ .Site.Params.Intro.title3 }}</h2>
+                    <h2>{{ .title }}</h2>
                 </header>
-                <p>{{ .Site.Params.Intro.description3 }}</p>
+                <p>{{ .description }}</p>
+                {{ end }}
             </section>
         </div>
     </div>
     <footer>
         <ul class="actions">
-            <li><a href="{{ .Site.Params.Intro.buttonlink1 }}" class="button big">{{ .Site.Params.Intro.buttontext1 }}</a></li>
-            <li><a href="{{ .Site.Params.Intro.buttonlink2 }}" class="button alt big">{{ .Site.Params.Intro.buttontext2 }}</a></li>
+            {{ with index .Site.Data.home.intro.buttons 0 }}
+            <li><a href="{{ .link }}" class="button big">{{ .text }}</a></li>
+            {{ end }}
+            {{ with index .Site.Data.home.intro.buttons 1 }}
+            <li><a href="{{ .link }}" class="button alt big">{{ .text }}</a></li>
+            {{ end }}
         </ul>
     </footer>
 </section>

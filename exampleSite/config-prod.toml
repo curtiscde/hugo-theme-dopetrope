@@ -3,45 +3,6 @@ title = "Dopetrope"
 baseURL = "https://curttimson.github.io/hugo-theme-dopetrope/"
 theme = "../.."
 
-[params]
-    subtitle = "Howdy. This is Dopetrope."
-    subtitleline2 = "A responsive template by HTML5 UP"
-
-[params.intro]
-    icon1 = "fa-cog"
-    title1 = "Ipsum consequat"
-    description1 = "Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus."
-
-    icon2 = "fa-flash"
-    title2 = "Magna etiam dolor"
-    description2 = "Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus."
-
-    icon3 = "fa-star"
-    title3 = "Tempus adipiscing"
-    description3 = "Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus."
-
-    buttonlink1 = "#"
-    buttontext1 = "Get Started"
-
-    buttonlink2 = "#"
-    buttontext2 = "Learn More"
-
-[params.footer]
-    title1 = "Blandit nisl adipiscing"
-
-    title2 = "What's this all about?"
-    imagelink2 = "#"
-    imageurl2 = "images/pic10.jpg"
-    description2 = "This is Dopetrope a free, fully responsive HTML5 site template by AJ for HTML5 UP It's released for free under the Creative Commons Attribution license so feel free to use it for any personal or commercial project – just don't forget to credit us!"
-    buttonlink2 = "#"
-    buttontext2 = "Find out more"
-
-    title3 = "Tempus consequat"
-
-    title4 = "Ipsum et phasellus"
-
-    title5 = "Vitae tempor lorem"
-
 [params.portfolio]
     title = "My Portfolio"
     foldername = "portfolio"
@@ -53,36 +14,6 @@ theme = "../.."
     postsperpage = "6"
     foldername = "blog"
 
-[params.social]
-    facebook = "https://facebook.com"
-    twitter = "https://twitter.com/"
-    dribbble = "https://dribbble.com"
-    linkedin = "https://www.linkedin.com"
-    googleplus = "https://plus.google.com/"
-
-[params.address]
-    line1 = "Untitled Incorporated"
-    line2 = "1234 Somewhere Road Suite"
-    line3 = "Nashville, TN 00000-0000"
-
-[params.contact]
-    email = "someone@untitled.tld"
-    phone = "(800) 000-0000"
-
 [params.settings]
     googleanalytics = "UA-113904582-2"
     disqus = "hugo-dopetrope"
-
-[params.sidebar]
-    position = "right"
-
-    image1 = "images/pic09.jpg"
-    title1 = "Sed etiam lorem nulla"
-    description1 = "Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore."
-    buttonlink1 = "#"
-    buttontext1 = "Magna sed taciti"
-
-    title2 = "Feugiat consequat"
-    description2 = "Veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat sed lorem consequat feugiat lorem dolore."
-    buttonlink2 = "#"
-    buttontext2 = "Ipsum consequat"

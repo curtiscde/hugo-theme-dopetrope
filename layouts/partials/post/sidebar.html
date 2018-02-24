@@ -1,28 +1,30 @@
-{{ $sidebar := .Site.Params.Sidebar }}
+{{ $sidebar := .Site.Data.sidebar.content }}
+{{ $sidebarsection1 := index $sidebar.sections 0 }}
+{{ $sidebarsection2 := index $sidebar.sections 1 }}
 <!-- Sidebar -->
 <section class="box">
-    {{ if $sidebar.image1 }}
-    <a href="{{ $sidebar.imagelink1 }}" class="image featured"><img src="{{ .Site.BaseURL }}{{ $sidebar.image1 }}" alt="" /></a>
+    {{ if $sidebarsection1.image }}
+    <a href="{{ $sidebarsection1.imagelink }}" class="image featured"><img src="{{ .Site.BaseURL }}{{ $sidebarsection1.image }}" alt="" /></a>
     {{ end }}
     <header>
-        <h3>{{ $sidebar.title1 }}</h3>
+        <h3>{{ $sidebarsection1.title }}</h3>
     </header>
-    <p>{{ $sidebar.description1 }}</p>
+    <p>{{ $sidebarsection1.description }}</p>
     <footer>
-        <a href="{{ $sidebar.buttonlink1 }}" class="button alt">{{ $sidebar.buttontext1 }}</a>
+        <a href="{{ $sidebarsection1.buttonlink }}" class="button alt">{{ $sidebarsection1.buttontext }}</a>
     </footer>
 </section>
 <section class="box">
     <header>
-        <h3>{{ $sidebar.title2 }}</h3>
+        <h3>{{ $sidebarsection2.title }}</h3>
     </header>
-    <p>{{ $sidebar.description2 }}</p>
+    <p>{{ $sidebarsection2.description }}</p>
     <ul class="divided">
         {{ range first 4 (where .Site.Pages "Type" .Site.Params.Blog.foldername) }}
         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
     </ul>
     <footer>
-        <a href="{{ $sidebar.buttonlink2 }}" class="button alt">{{ $sidebar.buttontext2 }}</a>
+        <a href="{{ $sidebarsection2.buttonlink }}" class="button alt">{{ $sidebarsection2.buttontext }}</a>
     </footer>
 </section>

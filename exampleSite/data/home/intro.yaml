@@ -1,0 +1,19 @@
+sections:
+- icon: 'fa-cog'
+  title: 'Ipsum consequat'
+  description: 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.'
+
+- icon: 'fa-flash'
+  title: 'Magna etiam dolor'
+  description: 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.'
+
+- icon: 'fa-star'
+  title: 'Tempus adipiscing'
+  description: 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.'
+
+buttons:
+- link: '#'
+  text: 'Get Started'
+
+- link: '#'
+  text: 'Learn More'

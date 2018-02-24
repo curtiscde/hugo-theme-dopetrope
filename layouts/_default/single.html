@@ -23,9 +23,9 @@
 			<!-- Main -->
 			<div id="main-wrapper">
 				<div class="container">
-					{{ if and (or (eq .Site.Params.Sidebar.position "left") (eq .Site.Params.Sidebar.position "right")) (not (eq .Params.hidesidebar true)) }}
+					{{ if and (or (eq .Site.Data.sidebar.content.position "left") (eq .Site.Data.sidebar.content.position "right")) (not (eq .Params.hidesidebar true)) }}
 					<div class="row">
-						{{ if eq .Site.Params.Sidebar.position "left" }}
+						{{ if eq .Site.Data.sidebar.content.position "left" }}
 						<div class="4u 12u(mobile)">
 							{{ partial "post/sidebar" . }}
 						</div>
@@ -33,7 +33,7 @@
 						<div class="8u 12u(mobile)">
 							{{ partial "post/content.html" . }}
 						</div>
-						{{ if eq .Site.Params.Sidebar.position "right" }}
+						{{ if eq .Site.Data.sidebar.content.position "right" }}
 						<div class="4u 12u(mobile)">
 							{{ partial "post/sidebar" . }}
 						</div>

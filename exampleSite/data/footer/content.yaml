@@ -1,0 +1,15 @@
+sections:
+- title: 'Blandit nisl adipiscing'
+
+- title: "What's this all about?"
+  imagelink: '#'
+  imageurl: "images/pic10.jpg"
+  description: "This is Dopetrope a free, fully responsive HTML5 site template by AJ for HTML5 UP It's released for free under the Creative Commons Attribution license so feel free to use it for any personal or commercial project – just don't forget to credit us!"
+  buttonlink: "#"
+  buttontext: "Find out more"
+
+- title: 'Tempus consequat'
+
+- title: 'Ipsum et phasellus'
+
+- title: 'Vitae tempor lorem'
