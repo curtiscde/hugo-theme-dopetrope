@@ -1,6 +1,6 @@
 {
   "name": "hugo-theme-dopetrope",
-  "version": "3.2.1",
+  "version": "4.0.0",
   "description": "Hugo Theme Dopetrope",
   "main": "index.js",
   "scripts": {
