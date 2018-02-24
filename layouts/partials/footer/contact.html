@@ -1,0 +1,22 @@
+<ul class="contact">
+    {{ if .Site.Data.footer.contactinfo.addresslines }}
+    <li>
+        <h3>Address</h3>
+        <p>
+            
+            {{ range $i, $e := .Site.Data.footer.contactinfo.addresslines }}
+            {{ if $i }} <br/> {{ end }} {{ .line }}
+            {{ end }}
+
+        </p>
+    </li>
+    {{ end }}
+    <li>
+        <h3>Mail</h3>
+        <p><a href="mailto:{{ .Site.Params.Contact.email }}">{{ .Site.Params.Contact.email }}</a></p>
+    </li>
+    <li>
+        <h3>Phone</h3>
+        <p>{{ .Site.Params.Contact.phone }}</p>
+    </li>
+</ul>

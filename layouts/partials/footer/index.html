@@ -51,24 +51,7 @@
                         <h2>{{ (index .Site.Data.footer.content.sections 4).title }}</h2>
                     </header>
                     {{ partial "footer/social.html" . }}
-                    <ul class="contact">
-                        <li>
-                            <h3>Address</h3>
-                            <p>
-                                {{ .Site.Params.Address.line1 }}<br />
-                                {{ .Site.Params.Address.line2 }}<br />
-                                {{ .Site.Params.Address.line3 }}
-                            </p>
-                        </li>
-                        <li>
-                            <h3>Mail</h3>
-                            <p><a href="mailto:{{ .Site.Params.Contact.email }}">{{ .Site.Params.Contact.email }}</a></p>
-                        </li>
-                        <li>
-                            <h3>Phone</h3>
-                            <p>{{ .Site.Params.Contact.phone }}</p>
-                        </li>
-                    </ul>
+                    {{ partial "footer/contact.html" . }}
                 </section>
             </div>
         </div>
