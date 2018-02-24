@@ -7,22 +7,6 @@ theme = "../.."
     subtitle = "Howdy. This is Dopetrope."
     subtitleline2 = "A responsive template by HTML5 UP"
 
-[params.footer]
-    title1 = "Blandit nisl adipiscing"
-
-    title2 = "What's this all about?"
-    imagelink2 = "#"
-    imageurl2 = "images/pic10.jpg"
-    description2 = "This is Dopetrope a free, fully responsive HTML5 site template by AJ for HTML5 UP It's released for free under the Creative Commons Attribution license so feel free to use it for any personal or commercial project – just don't forget to credit us!"
-    buttonlink2 = "#"
-    buttontext2 = "Find out more"
-
-    title3 = "Tempus consequat"
-
-    title4 = "Ipsum et phasellus"
-
-    title5 = "Vitae tempor lorem"
-
 [params.portfolio]
     title = "My Portfolio"
     foldername = "portfolio"
