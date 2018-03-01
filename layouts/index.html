@@ -1,65 +1,55 @@
+{{ define "main" }}
+	<div id="page-wrapper">
 
-<!DOCTYPE HTML>
-<!--
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	{{ partial "htmlhead.html" . }}
-	<body class="homepage">
-		<div id="page-wrapper">
+		<!-- Header -->
+			<div id="header-wrapper">
+				<div id="header">
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<div id="header">
+					{{ partial "logo.html" . }}
 
-						{{ partial "logo.html" . }}
+					{{ partial "nav.html" . }}
 
-						{{ partial "nav.html" . }}
+					{{ partial "banner.html" . }}
 
-						{{ partial "banner.html" . }}
+					{{ partial "intro.html" . }}
 
-						{{ partial "intro.html" . }}
-
-					</div>
 				</div>
+			</div>
 
-			<!-- Main -->
-				<div id="main-wrapper">
-					<div class="container">
-						{{ $portfolioItems := where .Site.Pages "Type" .Site.Params.Portfolio.foldername }}
-						{{ if $portfolioItems }}
-						<div class="row">
-							<div class="12u">
-								{{ partial "portfolio.html" . }}
-							</div>
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div class="container">
+					{{ $portfolioItems := where .Site.Pages "Type" .Site.Params.Portfolio.foldername }}
+					{{ if $portfolioItems }}
+					<div class="row">
+						<div class="12u">
+							{{ partial "portfolio.html" . }}
 						</div>
-						{{ end }}
-						{{ $blogPaginator := .Paginate (where .Data.Pages "Type" .Site.Params.Blog.foldername) 2 }}
-						{{ if $blogPaginator.TotalNumberOfElements }}
-						<div class="row">
-							<div class="12u">
-								{{ partial "blog.html" (dict "title" .Site.Params.Blog.title "paginator" $blogPaginator) }}
-							</div>
-						</div>
-						<footer>
-							<ul class="actions" style="text-align: center">
-								<li><a href="{{ .Site.Params.Blog.foldername }}" class="button big">{{ .Site.Params.Blog.viewalltext }}</a></li>
-							</ul>
-						</footer>
-						{{ end }}
 					</div>
+					{{ end }}
+					{{ $blogPaginator := .Paginate (where .Data.Pages "Type" .Site.Params.Blog.foldername) 2 }}
+					{{ if $blogPaginator.TotalNumberOfElements }}
+					<div class="row">
+						<div class="12u">
+							{{ partial "blog.html" (dict "title" .Site.Params.Blog.title "paginator" $blogPaginator) }}
+						</div>
+					</div>
+					<footer>
+						<ul class="actions" style="text-align: center">
+							<li><a href="{{ .Site.Params.Blog.foldername }}" class="button big">{{ .Site.Params.Blog.viewalltext }}</a></li>
+						</ul>
+					</footer>
+					{{ end }}
 				</div>
+			</div>
 
-				{{ partial "footer/index.html" . }}
+			{{ partial "footer/index.html" . }}
 
-		</div>
+	</div>
 
-		{{ partial "scripts/index.html" . }}
-		{{ if .Site.Params.Settings.disqus }}
-		<script id="dsq-count-scr" src="//{{ .Site.Params.Settings.disqus }}.disqus.com/count.js" async></script>
-		{{ end }}
+	{{ partial "scripts/index.html" . }}
+	{{ if .Site.Params.Settings.disqus }}
+	<script id="dsq-count-scr" src="//{{ .Site.Params.Settings.disqus }}.disqus.com/count.js" async></script>
+	{{ end }}
 
-	</body>
-</html>
+{{ end }}
