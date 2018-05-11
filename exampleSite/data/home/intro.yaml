@@ -1,13 +1,13 @@
 sections:
-- icon: 'fa-cog'
+- icon: 'fas fa-cog'
   title: 'Ipsum consequat'
   description: 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.'
 
-- icon: 'fa-flash'
+- icon: 'fas fa-bolt'
   title: 'Magna etiam dolor'
   description: 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.'
 
-- icon: 'fa-star'
+- icon: 'fas fa-star'
   title: 'Tempus adipiscing'
   description: 'Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.'
 

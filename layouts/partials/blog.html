@@ -7,7 +7,7 @@
         {{ range .paginator.Pages }}
         <div class="6u 12u(mobile)">
             <section class="box">
-                <a href="{{ .Permalink }}" class="image featured"><img src="{{ .Site.BaseURL }}{{ .Params.thumbnail }}" alt="" /></a>
+                <a href="{{ .Permalink }}" class="image featured"><img src="{{ .Site.BaseURL }}{{ .Params.thumbnail }}" alt=""></a>
                 <header>
                     <h3>{{ .Title }}</h3>
                     <p>Posted {{ .Date.Format "2 Jan 2006" }}</p>
@@ -15,9 +15,9 @@
                 <p>{{ .Description }}</p>
                 <footer>
                     <ul class="actions">
-                        <li><a href="{{ .Permalink }}" class="button icon fa-file-text">Continue Reading</a></li>
+                        <li><a href="{{ .Permalink }}" class="button"><i class="icon fas fa-file-alt"></i>Continue Reading</a></li>
                         {{ if and (.Site.Params.Settings.disqus) (.Params.disqusid) }}
-                        <li><a href="{{ .Permalink }}" class="button alt icon fa-comment disqus-comment-count" data-disqus-identifier="{{ .Params.disqusid }}">0 Comments</a></li>
+                        <li><a href="{{ .Permalink }}" class="button alt"><i class="icon fas fa-comment"></i><span class="disqus-comment-count" data-disqus-identifier="{{ .Params.disqusid }}">0 Comments</span></a></li>
                         {{ end }}
                     </ul>
                 </footer>

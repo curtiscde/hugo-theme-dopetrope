@@ -1,4 +1,3 @@
-@import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
 /*
@@ -1353,11 +1352,11 @@
 				background: #151112;
 			}
 
-		input[type="button"].icon:before,
-		input[type="submit"].icon:before,
-		input[type="reset"].icon:before,
-		button.icon:before,
-		.button.icon:before {
+		input[type="button"] .icon,
+		input[type="submit"] .icon,
+		input[type="reset"] .icon,
+		button .icon,
+		.button .icon {
 			opacity: 0.35;
 			position: relative;
 			top: 0.05em;
@@ -1530,11 +1529,11 @@
 					line-height: 1.5em;
 				}
 
-				ul.social li a.fa-facebook {
+				ul.social li a.fa-facebook-f {
 					background: #3c5a98;
 				}
 
-					ul.social li a.fa-facebook:hover {
+					ul.social li a.fa-facebook-f:hover {
 						background: #4c6aa8;
 					}
 
@@ -1554,11 +1553,11 @@
 						background: #d4477b;
 					}
 
-				ul.social li a.fa-linkedin {
+				ul.social li a.fa-linkedin-in {
 					background: #006599;
 				}
 
-					ul.social li a.fa-linkedin:hover {
+					ul.social li a.fa-linkedin-in:hover {
 						background: #1075a9;
 					}
 
@@ -1570,11 +1569,11 @@
 						background: #3b5671;
 					}
 
-				ul.social li a.fa-google-plus {
+				ul.social li a.fa-google-plus-g {
 					background: #da2713;
 				}
 
-					ul.social li a.fa-google-plus:hover {
+					ul.social li a.fa-google-plus-g:hover {
 						background: #ea3723;
 					}
 
@@ -1593,15 +1592,6 @@
 		position: relative;
 		text-decoration: none;
 	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
 
 		.icon > .label {
 			display: none;
