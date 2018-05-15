@@ -11,7 +11,7 @@ Theme includes ability for:
 
 ## Demo
 
-https://curttimson.github.io/hugo-theme-dopetrope/
+https://hugo-theme-dopetrope.netlify.com/
 
 ## Setup
 
@@ -65,7 +65,6 @@ The cover image URL is hard-coded, therefore to replace this add an image to the
 
 ```
 $ hugo --config config-prod.toml
-$ gulp deploy
 ```
 
 ## Original Theme Credits

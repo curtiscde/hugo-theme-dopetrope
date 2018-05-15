@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Dopetrope"
-baseURL = "https://curttimson.github.io/hugo-theme-dopetrope/"
+baseURL = "https://hugo-theme-dopetrope.netlify.com/"
 theme = "../.."
 
 [params.portfolio]
