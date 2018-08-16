@@ -1,6 +1,6 @@
 {
   "name": "hugo-theme-dopetrope",
-  "version": "4.2.2",
+  "version": "4.2.3",
   "description": "Hugo Theme Dopetrope",
   "main": "index.js",
   "scripts": {
@@ -20,9 +20,5 @@
   "bugs": {
     "url": "https://github.com/curttimson/hugo-theme-dopetrope/issues"
   },
-  "homepage": "https://github.com/curttimson/hugo-theme-dopetrope#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-gh-pages": "^0.5.4"
-  }
+  "homepage": "https://github.com/curttimson/hugo-theme-dopetrope#readme"
 }
