@@ -1,4 +1,6 @@
-# Dopetrope
+# Hugo Theme Dopetrope
+
+![](https://img.shields.io/badge/Hugo-%5E0.19.0-ff4088?style=flat-square&logo=hugo)
 
 Dopetrope theme ported from [HTML5 UP](https://html5up.net/) for use with the [Hugo static site generator](https://gohugo.io/).
 
