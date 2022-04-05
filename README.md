@@ -21,7 +21,7 @@ https://hugo-theme-dopetrope.netlify.com/
 
 See the demo's configuration as an example:
 
-https://github.com/curttimson/hugo-theme-dopetrope/blob/master/exampleSite/config-prod.toml
+https://github.com/curtiscde/hugo-theme-dopetrope/blob/master/exampleSite/config-prod.toml
 
 ### Front Matter
 
