@@ -2,23 +2,23 @@
 <nav id="nav">
     <ul>
         <li class="current"><a href="{{ .Site.BaseURL }}">Home</a></li>
-        {{ $portfolioItems := where .Site.Pages "Type" .Site.Params.Portfolio.foldername }}
-		{{ if $portfolioItems }}
+        {{- $portfolioItems := where .Site.RegularPages "Type" .Site.Params.Portfolio.foldername }}
+		{{- if $portfolioItems }}
         <li>
             <a href="{{ .Site.BaseURL }}#portfolio">{{ .Site.Params.Portfolio.title }}</a>
         </li>
-        {{ end }}
-        {{ $blogPosts := first 5 (where .Site.Pages "Type" .Site.Params.Blog.foldername) }}
-        {{ if $blogPosts }}
+        {{- end }}
+        {{- $blogPosts := first 5 (where .Site.RegularPages "Type" .Site.Params.Blog.foldername) }}
+        {{- if $blogPosts }}
         <li>
             <a href="{{ .Site.BaseURL }}{{ .Site.Params.Blog.foldername }}">{{ .Site.Params.Blog.title }}</a>
             <ul>
-                {{ range $blogPosts }}
+                {{- range $blogPosts }}
                 <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                {{ end }}
+                {{- end }}
             </ul>
         </li>
-        {{ end }}
+        {{- end }}
         <li><a href="{{ .Site.BaseURL }}#contact">Contact</a></li>
     </ul>
 </nav>

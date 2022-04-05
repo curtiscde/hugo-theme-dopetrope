@@ -1,19 +1,19 @@
 <ul class="social">
-    {{ with .Site.Data.footer.links.social }}
-    {{ if .facebook }}
+    {{- with .Site.Data.footer.links.social }}
+    {{- if .facebook }}
     <li><a class="icon fa-facebook" href="{{ .facebook }}"><span class="label">Facebook</span></a></li>
-    {{ end }}
-    {{ if .twitter }}
+    {{- end }}
+    {{- if .twitter }}
     <li><a class="icon fa-twitter" href="{{ .twitter }}"><span class="label">Twitter</span></a></li>
-    {{ end }}
-    {{ if .dribbble }}
+    {{- end }}
+    {{- if .dribbble }}
     <li><a class="icon fa-dribbble" href="{{ .dribbble }}"><span class="label">Dribbble</span></a></li>
-    {{ end }}
-    {{ if .linkedin }}
+    {{- end }}
+    {{- if .linkedin }}
     <li><a class="icon fa-linkedin" href="{{ .linkedin }}"><span class="label">LinkedIn</span></a></li>
-    {{ end }}
-    {{ if .googleplus }}
+    {{- end }}
+    {{- if .googleplus }}
     <li><a class="icon fa-google-plus" href="{{ .googleplus }}"><span class="label">Google+</span></a></li>
-    {{ end }}
-    {{ end }}
+    {{- end }}
+    {{- end }}
 </ul>

@@ -6,7 +6,7 @@
         </header>
         {{ end }}
         <ul class="dates">
-            {{ range first 5 (where .Site.Pages "Type" .Site.Params.Blog.foldername) }}
+            {{ range first 5 (where .Site.RegularPages "Type" .Site.Params.Blog.foldername) }}
             <li>
                 <span class="date">{{ .Date.Format "Jan" }} <strong>{{ .Date.Format "_2" }}</strong></span>
                 <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>

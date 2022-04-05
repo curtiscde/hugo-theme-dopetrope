@@ -4,30 +4,25 @@
 		<!-- Header -->
 			<div id="header-wrapper">
 				<div id="header">
-
 					{{ partial "logo.html" . }}
-
 					{{ partial "nav.html" . }}
-
 					{{ partial "banner.html" . }}
-
 					{{ partial "intro.html" . }}
-
 				</div>
 			</div>
 
 		<!-- Main -->
 			<div id="main-wrapper">
 				<div class="container">
-					{{ $portfolioItems := where .Site.Pages "Type" .Site.Params.Portfolio.foldername }}
+					{{ $portfolioItems := where .Site.RegularPages "Type" .Site.Params.Portfolio.foldername }}
 					{{ if $portfolioItems }}
 					<div class="row">
 						<div class="12u">
-							{{ partial "portfolio.html" . }}
+							{{ partial "portfolio.html" (dict "context" . "portfolioItems" $portfolioItems) }}
 						</div>
 					</div>
 					{{ end }}
-					{{ $blogPaginator := .Paginate (where .Data.Pages "Type" .Site.Params.Blog.foldername) 2 }}
+					{{ $blogPaginator := .Paginate (where .Site.RegularPages "Type" .Site.Params.Blog.foldername) 2 }}
 					{{ if $blogPaginator.TotalNumberOfElements }}
 					<div class="row">
 						<div class="12u">
