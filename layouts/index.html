@@ -22,7 +22,7 @@
 						</div>
 					</div>
 					{{ end }}
-					{{ $blogPaginator := .Paginate (where .Data.Pages "Type" .Site.Params.Blog.foldername) 2 }}
+					{{ $blogPaginator := .Paginate (where .Site.RegularPages "Type" .Site.Params.Blog.foldername) 2 }}
 					{{ if $blogPaginator.TotalNumberOfElements }}
 					<div class="row">
 						<div class="12u">
