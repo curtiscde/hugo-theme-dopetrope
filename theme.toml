@@ -1,6 +1,6 @@
 name = "Dopetrope"
 license = "Creative Commons"
-licenselink = "https://github.com/curttimson/hugo-theme-dopetrope/blob/master/LICENSE.md"
+licenselink = "https://github.com/curtiscde/hugo-theme-dopetrope/blob/master/LICENSE.md"
 description = "An elegant open-source and mobile-first theme"
 homepage = "https://html5up.net/uploads/demos/dopetrope/index.html"
 tags = ["blog", "html5up"]
@@ -9,7 +9,7 @@ min_version = 0.19
 
 [author]
     name = "Curtis Timson"
-    homepage = "https://curtistimson.co.uk/"
+    homepage = "https://curtiscode.dev/"
 
 # If porting an existing theme
 [original]
