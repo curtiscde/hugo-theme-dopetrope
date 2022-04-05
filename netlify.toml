@@ -1,6 +1,6 @@
 [build]
   base = "exampleSite/"
-  publish = "exampleSite/public"
+  publish = "public"
   command = "hugo --gc --themesDir ../.. --config config-prod.toml"
 
 [build.environment]
